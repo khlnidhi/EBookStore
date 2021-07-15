@@ -4,84 +4,124 @@
     padding: 0%;
     font-family: 'PT Sans' , sans-serif;
   }
+  body{
+    margin: 0%;
+    padding: 0%;
+    background-color:white;
+  }
+  .intro{
+    margin:1em 1em 1em 1em;
+  }
+  p{
+    text-align: center;
+    font-family: cursive;
+    font-weight: 100;
+  }
   
-  .column {
-    float: left;
-    width: 20%;
-    padding: 1em;
-    margin-bottom: 1em;
-  }
-  .row::after {
-    content: "";
-    clear: both;
+  .books{
+    width: 90%;
     display: flex;
-    
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 6em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: 4em;
+
   }
-  @media screen and (max-width: 500px) {
-    .column {
-      width: 100%;
-    }
+  .item-tile{
+    margin-right:4em;
+    width: 120%;
+    box-shadow: 1px 1px 5px 1px grey;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .Image{
+    width: 100%;
+    height: 200%;
+    object-fit: cover;
+  }
+  
+  .item-text {
+    height: 30px;
+    margin-top: -30px;
+    padding: 0.5em 0.5em 0.5em 0.5em;
+    text-align: center;
+    color:black;
+    background :gray;
+    opacity: auto;
   }
 
   .navbar{
-  
+   position:sticky;
+   top: 0%;
    background-color: black;
-   width: 100%;
+   width: 150%;
    overflow: auto;
    
   }
  ul {
    padding: 0;
-   margin: 0 0 0 0;
+   margin: 0 0 0 50px;
    list-style: none;
   }
  li{
     float: left;
   }
+  .logo img{
+    position: absolute;
+    margin: auto;
+      }
   nav  a{
     width :100px;
     display: block;
-     padding: 15px 10px;
+     padding: 15px 15px;
     text-decoration:none ;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    text-align:left;
+    text-align:right;
   }
-  .logo3 img{
-    position: absolute;
-    margin-top: 15px;
-    margin-left: 10px;
-
-  }
-  h1{
-    text-align: center;
-    font-family: cursive;
-    background-color: grey;
-    color:black;
+  .navbar li a:hover{
+    background: gray;
+    transition: 0.5s;
+    text-transform: none;
   }
   h2{
-    position: sticky;
    top: 0%;
     text-align: center;
-    font-family: cursive;
+    font-family: Arial, Helvetica, sans-serif;
     background-color:grey;
     color:black;
   }
   video{
     margin-top: 15px;
-    margin-left: 130px;
-    position: centre;
+    margin-left: 15px;
+    display: flex;
+    width:100%;
   }
-  form{
-    margin-top: 15px;
-    margin-left: 750px;
-    margin-bottom: 15px;
-    margin-right: 300px;
-   font-style: normal;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
-footer{
-  margin-top: 20px;
-  margin-left: 10px;
+  
+.footer{
+  width: 100%;
+	padding: 1em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color:black;
+	color:white;
+}
+.title{
+	color:white;
+	text-align: center;
+	padding-bottom: 0.5em;
+}
+input{
+	padding: 0.3em;
+	margin-top: 0.4em;
+}
+.button{
+  text-align: center;
+  display: flex;
+  align-content: center;
 }
 
