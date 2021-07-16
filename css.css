@@ -7,12 +7,13 @@
   body{
     margin: 0%;
     padding: 0%;
-    background-color:white;
+    background-color:rgb(238, 209, 209);
   }
   .intro{
     margin:1em 1em 1em 1em;
   }
   p{
+    margin-top: 1em;
     text-align: center;
     font-family: cursive;
     font-weight: 100;
