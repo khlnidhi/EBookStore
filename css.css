@@ -30,7 +30,7 @@
   
   }
   .des{
-    padding: 5px;
+    padding: 3px;
     text-align: center;
   }
   .books{
@@ -106,44 +106,37 @@
 input{
 	padding: 0.2em;
 	margin-top: 0.5em;
+
 }
-  @media only screen and (min-width:300px) and (max-width:500px){
-   nav ul{
-     height: 230px;
-     flex-direction: column;
-     text-align: center;
-   }
-   .gallery{
-     margin-left: 0em;
-     margin-right: 0em;
-   }
-    .books{
-      width:44%;
-      height: auto; 
-     margin-left: 1em;
-     margin-bottom: 2em;
-    }
- .gallery img{
-   width: 180px;
-   height: 200px;
-   margin-left: 0em;
-   margin-right: 02em;
+
+@media only screen and (max-width: 768px){
+  nav ul{
+    height: 230px;
+    flex-direction: column;
+    text-align: center;
   }
+  .books{
+    width:75%;
+    height: 70;
+   
+  }
+  .gallery{
+    margin-bottom: 2em;
+  }
+  
 }
-   @media only screen and (min-width:505px) and (max-width:900px){
-    .gallery{
-      margin-left: 0em;
-      margin-right: 0em; 
-    }
-    .gallery img{
-      width: 180px;
-      height:230px;
-      margin-left: 1em;
-      margin-right: 1em;
-     }
-     .books{
-      width: 25%;
-      height: auto; 
-     
-    }
-   }
+@media screen and (min-width: 769px ) and (max-width: 1200px){
+	.books{
+		width: auto;
+	}
+  .gallery img{
+    width: 250px;
+    height:300px;
+   
+ }
+ .gallery{
+   margin-bottom: 2em ;
+ }
+}
+
+ 
